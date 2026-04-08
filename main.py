@@ -59,6 +59,12 @@ def submit_form():
     return render_template('form_result.html', 
                            # Umieść tutaj zmienne
                            name=name,
+                           email=email,
+                           address=address,
+                           date=date
+
+
+
                            )
 
 app.run(debug=True)
