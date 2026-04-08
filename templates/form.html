@@ -19,7 +19,7 @@
   </header>
   <main>
     {% block content %}
-    <form action="{{ url_for('submit_form') }}" method="post" class="form">
+    <form action="/submit" method="post" class="form">
       <div class="user">
         <ul class="user-info">
             <li class="user-info__item">
@@ -29,7 +29,9 @@
             </li>
             <li class="user-info__item">
                 <!-- Zadanie 4. Utwórz pole wejściowe dla adresu e-mail użytkownika -->
-                
+                 <label for="email">Twój adres e-mail</label>
+                 <input type="email" name="email" id="email" placeholder="Enter your email address" required>
+
             </li>
         </ul>
         <!--Pola na adres i nazwę-->
